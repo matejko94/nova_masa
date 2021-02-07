@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Nova masa</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./index.js"></script>
     <meta charset="ISO-8859-1">
 <style>
 body {
-  font-family: system-ui;
+  font-family: sans-serif;
   background: rgb(224,224,224);
   margin: 0;
   display: grid;
   place-items: center;
 }
-
 
 div.covid {
 
@@ -29,7 +31,6 @@ div.covid {
 </style>
 </head>
 <body>
-    <title>Nova masa</title>
     <img src="resources/01logotip.png" alt="" style="width:100%;height:auto;">
     <div class="covid">
         <h1>PRILAGODITEV NOVE MA&Scaron;E ZARADI KORONAVIRUSA</h1>
@@ -50,7 +51,15 @@ div.covid {
     <img src="resources/03urnik.png" alt="" style="width:100%;height:auto;">
     <img src="resources/04razlaga.png" alt="" style="width:100%;height:auto;">
     <img src="resources/05molitev.png" alt="" style="width:100%;height:auto;">
-    <img src="resources/06zemljevidi.png" alt="" style="width:100%;height:auto;">
+
+    <div id="map" style="width:1000px;height:500px"></div>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFgz1lkEriTjI-xUDUuHJutwHGARte0sY&callback=initMap&libraries=&v=weekly"
+            async
+    ></script>
+
+
+   <!-- <img src="resources/06zemljevidi.png" alt="" style="width:100%;height:auto;">-->
     <img src="resources/07predstavitev.png" alt="" style="width:100%;height:auto;">
     <img src="resources/09kontakt.png" alt="" style="width:100%;height:auto;">
 
