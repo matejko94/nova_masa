@@ -6,6 +6,10 @@
     <script src="./index.js"></script>
     <meta charset="ISO-8859-1">
 <style>
+    @font-face {
+        font-family: myFirstFont;
+        src: url('resources/Alata-Regular.ttf');
+    }
 body {
   font-family: sans-serif;
   background: rgb(224,224,224);
@@ -14,8 +18,17 @@ body {
   place-items: center;
 }
 
-div.covid {
+div.map {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 500px;
+}
 
+div.covid {
+    font-family: myFirstFont;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
@@ -52,7 +65,7 @@ div.covid {
     <img src="resources/04razlaga.png" alt="" style="width:100%;height:auto;">
     <img src="resources/05molitev.png" alt="" style="width:100%;height:auto;">
 
-    <div id="map" style="width:1000px;height:500px"></div>
+    <div id="map" class="map"></div>
     <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFgz1lkEriTjI-xUDUuHJutwHGARte0sY&callback=initMap&libraries=&v=weekly"
             async
