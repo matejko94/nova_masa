@@ -1,88 +1,258 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" href="resources/logo-za-zavihek.png">
+    <link href="resources/logo-za-zavihek.png" rel="icon">
     <title>Nova masa</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="./index.js"></script>
     <meta charset="ISO-8859-1">
-<style>
-    @font-face {
-        font-family: myFirstFont;
-        src: url('resources/Alata-Regular.ttf');
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url('resources/fonts/Alata-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: billgatesRegular;
+            src: url('resources/fonts/Billgates Demo.ttf');
+        }
+
+        body {
+            font-family: sans-serif;
+            background: rgb(224, 224, 224);
+            margin: 0;
+            display: grid;
+            place-items: center;
+        }
+
+        div.map {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+            height: 500px;
+        }
+
+        .slikeL {
+            margin-top: 20px;
+            font-family: myFirstFont;
+            font-size: 40px;
+            color: rgb(32, 56, 109)
+        }
+
+        .slike {
+            margin-top: 20px;
+            font-family: billgatesRegular;
+            font-size: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto 250px;
+            padding: 10px;
+            grid-gap: 10px;
+            margin: 20px;
+
+        }
+
+        .grid-item {
+            font-size: 30px;
+            background-color: rgb(173, 183, 192);
+            vertical-align: center;
+        }
+
+        .demo-bg-full {
+            width: 100%;
+            height: 100%;
+        }
+
+        .inner{
+          width: 75%;
+          height: 30%;
+          top: 33%;
+          margin: 0 auto;
+          position: relative;
+          text-align: center;
+          font-size: 36px;
+          font-family: billgatesRegular;
+
     }
-body {
-  font-family: sans-serif;
-  background: rgb(224,224,224);
-  margin: 0;
-  display: grid;
-  place-items: center;
-}
 
-div.map {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-    height: 500px;
-}
 
-div.covid {
-    font-family: myFirstFont;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 900px;
-    border-radius: 25px;
-    padding: 50px;
-    border: 5px solid red;
-    background-size: 100% ;
-    background-repeat: no-repeat;
-}
-
-</style>
+    </style>
 </head>
 <body>
-    <img src="resources/01logotip.png" alt="" style="width:100%;height:auto;">
-    <div class="covid">
-        <!--<h1>PRILAGODITEV NOVE MA&Scaron;E ZARADI KORONAVIRUSA</h1>
-        Zaradi epidemije Covid-19 bo nova ma&scaron;a Bo&scaron;tjana Dolin&scaron;ka v Stranjah prilagojena.<br>
-        <br>
-        DUHOVNIKI:<br>
-        V &zcaron;upnijski cerkvi sv. Benedikta bo vstop omejen, zato prosim, da spo&scaron;tujete navodila usmerjevalcev. Prednostno, bodo imeli vstop v cerkev duhovniki in dijakoni z okolij&scaron;kih &zcaron;upnij.
-        Obvezna je <span style="color:red;">no&scaron;nja mask</span> in spo&scaron;tovanje <span style="color:red;">varnostne razdalje 2m</span>.
-        <br>
-        <br>
-        OSTALI OBISKOVALCI:<br>
-        Za ustrezno upo&scaron;tevanje upo&scaron;tevanje <span style="color:red;">varnostne razdalje</span>, bodo sedi&scaron;&ccaron;a urejena pred cerkvijo. Prosim, da upo&scaron;tevate navodila
-        usmerjevalcev. Ob vstopu v cerkev, ali katerikoli drugi zaprti prostor, vas prosim, da <span style="color:red;">nosite masko</span>, ter upo&scaron;tevate varnostno
-        razdaljo dveh metrov.
-        <br>
-        <br>
-        Za kakr&scaron;na koli vpra&scaron;anja sva vam novoma&scaron;ni&scaron;kim ceremonjerjem na voljo na telefon ali preko e-po&scaron;te. Kontakt lahko<br>
-        najdete spodaj. Prosim, spo&scaron;tujmo vse sprejete ukrepe vlade in upo&scaron;tevajmo navodila usmerjevalcev.<br>
-        <br>-->
-        Morebitna obvestila glede COVID-19-a bodo objavljena nekaj dni pred novo ma&scaron;o.
-        <br>
-        Hvala za razumevanje,<br>
-        Tadej Pagon, ceremonier<br>
+<img alt="" src="resources/01logotip.png" style="width:100%;height:auto;">
+
+<div class="slikeL">FOTOGRAFIJE Z NOVE MA&Scaron;E</div>
+<div class="slike">Nova Ma&scaron;a</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/nova_masa/IMG_0260.jpeg">
     </div>
-    <img src="resources/03urnik.png" alt="" style="width:100%;height:auto;">
-    <img src="resources/04razlaga.png" alt="" style="width:100%;height:auto;">
-    <img src="resources/05molitev.png" alt="" style="width:100%;height:auto;">
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/nova_masa/IMG_0303.jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/nova_masa/IMG_0408.jpeg">
+    </div>
+        <div class="grid-item">
+            <div class="inner">
+                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QPYeQBla67lUCzkA?e=qgZM80">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
+        </div>
+</div>
 
-    <div id="map" class="map"></div>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFgz1lkEriTjI-xUDUuHJutwHGARte0sY&callback=initMap&libraries=&v=weekly"
-            async
-    ></script>
+<div class="slike">Slovo od doma in sprejem Novoma&scaron;nika</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/slovo/(178).jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/slovo/(11).jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/slovo/(156).jpeg">
+    </div>
+        <div class="grid-item">
+            <div class="inner">
+                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_hnmSMbrYhzUkIOQw?e=kx4XSX">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
+        </div>
+</div>
 
+<div class="slike">Litanje Srca Jezusovega</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/litanije/IMG_0609.jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/litanije/IMG_0618.jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/litanije/IMG_0663.jpeg">
+    </div>
+        <div class="grid-item">
+            <div class="inner">
+                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QQcIPpkK3blrmT1A?e=pNtamZ">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
+        </div>
+</div>
 
-   <!-- <img src="resources/06zemljevidi.png" alt="" style="width:100%;height:auto;">-->
-    <img src="resources/07predstavitev.png" alt="" style="width:100%;height:auto;">
-    <img src="resources/09kontakt.png" alt="" style="width:100%;height:auto;">
+<div class="slike">Litanje Srca Jezusovega</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/litanije/IMG_0609.jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/litanije/IMG_0618.jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/litanije/IMG_0663.jpeg">
+    </div>
+        <div class="grid-item">
+            <div class="inner">
+                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QRXIwRAZ5dNSU37w?e=ntJTNb">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
+        </div>
+</div>
+
+<div class="slike">Priprava na novo ma&scaron;o</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/mlaji/IMG_0123.jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/mlaji/IMG_0137.jpeg">
+    </div>
+    <div class="grid-item">
+        <img
+                alt=""
+                class="demo-bg-full"
+                src="resources/slike/mlaji/IMG_0172.jpeg">
+    </div>
+        <div class="grid-item">
+            <div class="inner">
+                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QRXIwRAZ5dNSU37w?e=ntJTNb">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
+        </div>
+</div>
+
+<!--
+<div class="covid">
+    <h1>PRILAGODITEV NOVE MA&Scaron;E ZARADI KORONAVIRUSA</h1>
+    Zaradi epidemije Covid-19 bo nova ma&scaron;a Bo&scaron;tjana Dolin&scaron;ka v Stranjah prilagojena.<br>
+    <br>
+    DUHOVNIKI:<br>
+    V &zcaron;upnijski cerkvi sv. Benedikta bo vstop omejen, zato prosim, da spo&scaron;tujete navodila usmerjevalcev. Prednostno, bodo imeli vstop v cerkev duhovniki in dijakoni z okolij&scaron;kih &zcaron;upnij.
+    Obvezna je <span style="color:red;">no&scaron;nja mask</span> in spo&scaron;tovanje <span style="color:red;">varnostne razdalje 2m</span>.
+    <br>
+    <br>
+    OSTALI OBISKOVALCI:<br>
+    Za ustrezno upo&scaron;tevanje upo&scaron;tevanje <span style="color:red;">varnostne razdalje</span>, bodo sedi&scaron;&ccaron;a urejena pred cerkvijo. Prosim, da upo&scaron;tevate navodila
+    usmerjevalcev. Ob vstopu v cerkev, ali katerikoli drugi zaprti prostor, vas prosim, da <span style="color:red;">nosite masko</span>, ter upo&scaron;tevate varnostno
+    razdaljo dveh metrov.
+    <br>
+    <br>
+    Za kakr&scaron;na koli vpra&scaron;anja sva vam novoma&scaron;ni&scaron;kim ceremonjerjem na voljo na telefon ali preko e-po&scaron;te. Kontakt lahko<br>
+    najdete spodaj. Prosim, spo&scaron;tujmo vse sprejete ukrepe vlade in upo&scaron;tevajmo navodila usmerjevalcev.<br>
+    <br>
+    Morebitna obvestila glede COVID-19-a bodo objavljena nekaj dni pred novo ma&scaron;o.
+    <br>
+    Hvala za razumevanje,<br>
+    Tadej Pagon, ceremonier<br>
+</div>-->
+<!--
+  <img src="resources/03urnik.png" alt="" style="width:100%;height:auto;">-->
+<img alt="" src="resources/04razlaga.png" style="width:100%;height:auto;">
+<img alt="" src="resources/05molitev.png" style="width:100%;height:auto;">
+
+<div class="map" id="map"></div>
+<script
+        async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFgz1lkEriTjI-xUDUuHJutwHGARte0sY&callback=initMap&libraries=&v=weekly"
+></script>
+
+<img alt="" src="resources/07predstavitev.png" style="width:100%;height:auto;">
+<img alt="" src="resources/09kontakt.png" style="width:100%;height:auto;">
 
 
 </body>
@@ -91,9 +261,13 @@ div.covid {
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1L19W1GC6G"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-1L19W1GC6G');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-1L19W1GC6G');
 </script>
