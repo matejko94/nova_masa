@@ -5,6 +5,7 @@
     <title>Nova masa</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <meta charset="ISO-8859-1">
     <style>
         @font-face {
@@ -67,17 +68,25 @@
             height: 100%;
         }
 
-        .inner{
-          width: 75%;
-          height: 30%;
-          top: 33%;
-          margin: 0 auto;
-          position: relative;
-          text-align: center;
-          font-size: 36px;
-          font-family: billgatesRegular;
+        .inner {
+            width: 75%;
+            height: 30%;
+            top: 25%;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            font-size: 36px;
+            font-family: billgatesRegular;
 
-    }
+        }
+
+        .ahref {
+            text-decoration: none;
+            background-color: unset;
+            color: white;
+            letter-spacing: 1px;
+            line-height: 42px;
+        }
 
 
     </style>
@@ -106,10 +115,16 @@
                 class="demo-bg-full"
                 src="resources/slike/nova_masa/IMG_0408.jpeg">
     </div>
-        <div class="grid-item">
-            <div class="inner">
-                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QPYeQBla67lUCzkA?e=qgZM80">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
-        </div>
+    <div class="grid-item" id="div1">
+        <div class="inner">
+            <a class="ahref" href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QPYeQBla67lUCzkA?e=qgZM80" id="myHref1">Oglej si ve&#x10D;<br>
+                fotografij<br>&rarr;</a></div>
+        <script>
+            $("#myHref1").on('click', function () {
+                $("#div1").css("background-color", "rgb(32, 56, 109)");
+            });
+        </script>
+    </div>
 </div>
 
 <div class="slike">Slovo od doma in sprejem Novoma&scaron;nika</div>
@@ -132,10 +147,16 @@
                 class="demo-bg-full"
                 src="resources/slike/slovo/(156).jpeg">
     </div>
-        <div class="grid-item">
-            <div class="inner">
-                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_hnmSMbrYhzUkIOQw?e=kx4XSX">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
-        </div>
+    <div class="grid-item" id="div2">
+        <div class="inner">
+            <a class="ahref" href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_hnmSMbrYhzUkIOQw?e=kx4XSX" id="myHref2">Oglej si ve&#x10D;<br>
+                fotografij<br>&rarr;</a></div>
+        <script>
+            $("#myHref2").on('click', function () {
+                $("#div2").css("background-color", "rgb(32, 56, 109)");
+            });
+        </script>
+    </div>
 </div>
 
 <div class="slike">Litanje Srca Jezusovega</div>
@@ -158,10 +179,16 @@
                 class="demo-bg-full"
                 src="resources/slike/litanije/IMG_0663.jpeg">
     </div>
-        <div class="grid-item">
-            <div class="inner">
-                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QQcIPpkK3blrmT1A?e=pNtamZ">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
-        </div>
+    <div class="grid-item" id="div3">
+        <div class="inner">
+            <a class="ahref" href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QQcIPpkK3blrmT1A?e=pNtamZ" id="myHref3">Oglej si ve&#x10D;<br>
+                fotografij<br>&rarr;</a></div>
+        <script>
+            $("#myHref3").on('click', function () {
+                $("#div3").css("background-color", "rgb(32, 56, 109)");
+            });
+        </script>
+    </div>
 </div>
 
 <div class="slike">Priprava na novo ma&scaron;o</div>
@@ -184,10 +211,16 @@
                 class="demo-bg-full"
                 src="resources/slike/mlaji/IMG_0172.jpeg">
     </div>
-        <div class="grid-item">
-            <div class="inner">
-                <a href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QRXIwRAZ5dNSU37w?e=ntJTNb">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a></div>
+    <div class="grid-item" id="div4">
+        <div class="inner">
+            <a class="ahref" id="myHref4" href="https://1drv.ms/u/s!Akmn5RFq6Qbfh_QRXIwRAZ5dNSU37w?e=ntJTNb">Oglej si ve&#x10D;<br> fotografij<br>&rarr;</a>
         </div>
+        <script>
+            $("#myHref4").on('click', function () {
+                $("#div4").css("background-color", "rgb(32, 56, 109)");
+            });
+        </script>
+    </div>
 </div>
 
 <!--
